@@ -419,7 +419,7 @@ img {
   justify-content: space-between;
 }
 
-.footer-address {
+.address-list__link {
   display: inline-block;
   line-height: 1.71;
   color: var(--primary-light-color);
@@ -429,7 +429,7 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-link {
+.address-list__contact-link {
   display: inline-block;
   font-style: normal;
   line-height: 1.71;
@@ -437,8 +437,8 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.address-list__contact-link:hover,
+.address-list__contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -532,20 +532,8 @@ img {
 }
 
 /*----------------------PORTFOLIO------------------------------*/
-.works-title {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--primary-dark-color);
-}
 
-.works-sub-title {
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--primary-text-color);
-}
-
-.button-portfolio {
+.button-list__btn {
   display: block;
   padding: 6px 22px;
   background: var(--background-secondary-light);
@@ -563,8 +551,8 @@ img {
   transition-timing-function: var(--timing-function);
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
+.button-list__btn:hover,
+.button-list__btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-light-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -578,29 +566,29 @@ img {
   margin-bottom: 50px;
 }
 
-.cards-list {
+.cardset {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.cards-link {
+.cardset__link {
   display: block;
   transition: box-shadow 250ms var(--timing-function);
 }
-.cards-link:hover,
-.cards-link:focus {
+.cardset__link:hover,
+.cardset__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.cards-wrap {
+.cardset__wrap {
   position: relative;
   overflow: hidden;
 }
 
-.cards-text {
+.cardset__text {
   position: absolute;
   top: 0;
   padding: 63px 24px;
@@ -615,20 +603,33 @@ img {
   transition: transform 250ms var(--timing-function);
 }
 
-.card-item:hover .cards-text,
-.card-item:focus .cards-text {
+.cardset__item:hover .cardset__text,
+.cardset__item:focus .cardset__text {
   transform: translateY(0%);
 }
 
-.works-box {
+.cardset__box {
   padding: 20px 24px;
   border: 1px solid rgba(238, 238, 238, 1);
   border-top: none;
   background-color: rgba(255, 255, 255, 1);
 }
 
-.works-title {
+.cardset__title {
   margin-bottom: 4px;
+}
+
+.cardset__title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-dark-color);
+}
+
+.cardset__sub-title {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
 }
 
 /* МОДАЛЬНЕ ВІКНО */
